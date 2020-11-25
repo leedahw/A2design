@@ -6,7 +6,6 @@
 
 body,html{
     max-width:100%;
-    align:center;
     font-family: 'Mulish', sans-serif;
     font-size:16px;
 }
@@ -278,10 +277,6 @@ section.featuredArticle {
 
 }
 
-p.article{
-
-}
-
 #featuredArticleHeading {
     font-size: 1.5rem;
     font-weight: 700;
@@ -331,10 +326,6 @@ p.article{
     margin-left:2rem;
 }
 
-div#video{
-
-}
-
 .IndivArticle{
     background-color:white; 
     margin-bottom: 2rem;
@@ -363,7 +354,7 @@ body{
 
 img#logo {
     width:20%;
-    height;auto;
+    height:auto;
 }
 
 section.article {
