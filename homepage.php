@@ -41,13 +41,13 @@ $stmt->execute();
 
 while($row = $stmt->fetch(PDO:: FETCH_ASSOC)) {?>
 
-    <img src = "uploads/<?php echo($row["img"]);?>" alt="img" /><br/><?php
+    <img id="featuredimg" src = "uploads/<?php echo($row["img"]);?>" alt="img" /><br/><?php
     echo("<div class=featuredArticle>");
     echo("<h3 class= article id= featuredArticleHeading>");
     echo($row["title"]);
     echo("</h3>");
 
-    echo("<p id=featuredArticle>");?>
+    echo("<p id=featuredArticleDetail>");?>
     <label class="label">By: </label>
     <?php echo($row["author"]);?><br/>
     <label class="label">Category: </label>

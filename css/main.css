@@ -266,7 +266,8 @@ a:hover{
 }
 
 section.featuredArticle {
-    width: 100%;
+    position:relative;
+    height: 80vh;
     display:flex;
     flex-direction:column;
     font-size: 1.25em;
@@ -274,7 +275,18 @@ section.featuredArticle {
     background-image:50%;
     padding-top:30px;
     padding-bottom:30px;
+    margin-bottom: 3rem;
+    overflow:hidden;
+}
 
+p#featuredArticleDetail {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 1rem;
+}
+
+#featuredimg {
+    width: 50%;
 }
 
 #featuredArticleHeading {
@@ -294,7 +306,11 @@ section.featuredArticle {
  p#featuredArticle, a#featuredLink, h3#featuredArticleHeading{
      padding-left: 2rem;
      padding-right: 2rem;
- }   
+}
+ 
+#featuredLink {
+    overflow:auto;
+}
 
 
 #techLabel,#careerLabel,#industryLabel{
@@ -318,7 +334,7 @@ section.featuredArticle {
 }
 
 #mainArticleheading{
-    position:relative;
+
 
 }
 
@@ -367,6 +383,10 @@ section.article {
     margin-left:auto;
     margin-right:auto;
 
+}
+
+section.featuredArticle {
+    height:auto;
 }
 
 #techArticle,#industryArticle,#careerArticle{
