@@ -1,54 +1,48 @@
-
-#header {
-    z-index: 1;
-    position: static;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    list-style-type: none;
-    margin:0px;
+.flipCard {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
 }
-
-
-
-#footer{
-    z-index: 1;
-    position:static;
-    background-color: white;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    padding-left:1rem;
-
-}
-
-img#logo{
-    width:100%;
-    height:auto;
-    justify-content: center;
-}
-
-.flipCardContainer {
-    background-color: transparent;
-    width:auto;
-    height:auto;
-    perspective: 1000px;
-}
-
+  
 .flipCardInner {
-    position:relative;
-    width:100%;
-    height:100%;
-    text-align:center;
-    transition: transform 1s;
-    transform-style: preserve-3d;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+  
+
+.flipCard:hover .flipCardInner {
+  transform: rotateY(180deg);
+}
+  
+
+.flipCardFront, .flipCardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* for safari */
+  backface-visibility: hidden;
+}
+  
+.flipCardFront {
+  background-color: white;
+  color: black;
+}
+  
+.flipCardBack {
+  background-color: grey;
+  color: white;
+  transform: rotateY(180deg);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
-
-@media (max-width:480px)  { 
-    img#logo {
-        width:20%;
-        height:auto;
-    }
-}
+@media (max-width:480px)  {
+    

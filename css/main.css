@@ -4,6 +4,33 @@
 .fakeElement{ /*need this to show all styles*/
 }
 
+#header {
+    z-index: 1;
+    position: static;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    list-style-type: none;
+    margin:0px;
+}
+
+
+
+#footer{
+    z-index: 1;
+    position:static;
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left:1rem;
+
+}
+
+
+
+
 body,html{
     max-width:100%;
     font-family: 'Mulish', sans-serif;
@@ -49,10 +76,13 @@ h2{
     padding-left:2rem; 
 }
 
-
-
 h3{
     font-size:1.5em;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 700;
 }
 
 p{
@@ -101,10 +131,7 @@ img.articleimg{
     padding-left: 0;
 }
 
-#homepage{
-    display:flex;
-    justify-content: center;
-}
+
 
 #articlenav{
     width:33%;
