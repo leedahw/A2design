@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href='./favicon.ico' type='image/x-icon'/>
     <meta name="description" content="home page/ dashboard for IMM News Network">
     <meta name="keywords" content="HTML, PHP, IMM, News, Network">
     <meta name="author" content="Alana Dahwoon Lee">

@@ -336,6 +336,10 @@ p#featuredArticleDetail {
     margin-bottom:1rem;
 }
 
+#text {
+    padding:1rem;
+}
+
 .IndivArticle{
     background-color:white; 
     margin-bottom: 2rem;

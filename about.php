@@ -18,7 +18,9 @@ include('includes/standardheader.html');?>
 
 	while($row = $stmt->fetch(PDO::FETCH_ASSOC)) {     
 		// recursively print out object.
+		echo("<p>");
 		echo($row["content"]); //or $row[0];
+		echo("</p>");
 		?>
 		<a href="edit-about.php?aboutId=<?php echo($row["aboutId"]); ?>"><br/>Edit</a>
 		<?php
