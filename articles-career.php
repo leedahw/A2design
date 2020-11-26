@@ -1,6 +1,9 @@
 <?php session_start();
 //articles-career
-    include("includes/standardheader.html");
+//get records from db vv
+include("includes/dbconfig.php");
+include("includes/standardheader.html");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,31 +17,30 @@
 </head>
 <body>
     <h2>Career Articles</h2>
-<?php
-    //get records from db vv
-include("includes/dbconfig.php");
 
-
-$stmt = $pdo->prepare("SELECT * FROM `article` WHERE `article` . `category` = 'career'");
-
+<section class="article" id="singleArticle">
+<?php $stmt = $pdo->prepare("SELECT * FROM `article` WHERE `article` . `category` = 'career'");
 $stmt->execute();
 while ($row = $stmt->fetch(PDO:: FETCH_ASSOC)){
-    echo("<h4>");
+    echo("<div class=indivArticle>");?>
+    <img class="articleimg" src = "uploads/<?php echo($row["img"]);?>" alt="img" /><?php
+    echo("<h3 class= article id= articleTitle>");
     echo($row["title"]);
-    echo("</h4>");
+    echo("</h3>");
 
-    echo("<p>");?>
-    <label>By: </label><?php
-    echo($row["author"]);?><br/>
-    <label>Category: </label><?php
-    echo($row["category"]);?><br/><br/><?php
+    echo("<p class= article id= articleDetails>");
+    echo("<p class=article id=careerAuthor><label id=careerLabel>By: </label>");
+    echo($row["author"]);?></p><br/><?php
     echo($row["content"]);
     echo("</p>");?>
-
-    <a href = "view-article.php?articleId=<?php echo($row["articleId"]);?>">Read More</a><br/>
-    <a href = "<?php echo($row["articleLink"]);?>">See Full Article</a><br/>
-<?php
-}
-?>
+    <br/>
+    <a class="link" href = "view-article.php?articleId=<?php echo($row["articleId"]);?>">Read More</a><br/>
+    <a class="link" href = "<?php echo($row["articleLink"]);?>">See Full Article</a><br/>
+    <br />
+<?php 
+    echo("</div>");
+}?>   
+</section>
+</section>
 </body>
 </html>
