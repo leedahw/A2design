@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./css/header-fotter.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='icon' href='./favicon.ico' type='image/x-icon'/ >
@@ -8,9 +9,17 @@
     <head></head>
     <title>Standard Header</title>
 <header>
-    <a id="homepage" href = "homepage.php">
-    <img id="logo" src = "./articles/img/logo.png" alt = "IMM NEWS NETWORK LOGO" width = 100p></a>
-    
+<div class="flipCardContainer">
+    <div class="flipCard">
+        <div class="flipCardFront">
+            <a id="homepage" href = "homepage.php">
+            <img id="logo" src = "./articles/img/logo.png" alt = "IMM NEWS NETWORK LOGO" width = 100p></a>
+        </div>
+        <div class="flipCardBack">
+            <h3>Home Page</h3>
+        </div>
+    </div>
+</div>
     <nav>
         <li id="headerNav"><a href = "about.php">ABOUT</a></li>
         <li id="headerNav"><a href = "contact-form.php">CONTACT</a></li>

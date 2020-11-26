@@ -35,13 +35,12 @@
 <section class= "featuredArticle" id= "featuredArticle">
 <h2 class= "header" id="articleHeader">Featured Article</h2>
 <?php 
-
 $stmt = $pdo->prepare("SELECT * FROM `article` WHERE `article`.`featured` = 'yes'");
 $stmt->execute();
-
 while($row = $stmt->fetch(PDO:: FETCH_ASSOC)) {?>
 
-    <img id="featuredimg" src = "uploads/<?php echo($row["img"]);?>" alt="img" /><br/><?php
+    <img id="featuredimg" src = "uploads/<?php echo($row["img"]);?>" alt="img" /><br/>
+    <?php
     echo("<div class=featuredArticle>");
     echo("<h3 class= article id= featuredArticleHeading>");
     echo($row["title"]);
@@ -138,7 +137,7 @@ while ($row = $stmt->fetch(PDO:: FETCH_ASSOC)){
         echo($row["title"]);
         echo("</h3>");
 
-        echo("<p class= article id= articleDetails>");
+        echo("<p class= indivArticle article id= articleDetails>");
         echo("<p class=article id=careerAuthor><label id=careerLabel>By: </label>");
         echo($row["author"]);?></p><br/><?php
         echo($row["content"]);
@@ -154,7 +153,7 @@ while ($row = $stmt->fetch(PDO:: FETCH_ASSOC)){
 
 </section>
 
-<section class= "table" id= "visitorTable">
+<div class= "table" id= "visitorTable">
 <table>
     <tr>
         <th class= "table" id= "tableHeading">Monthly Visitors: <th/>
@@ -172,7 +171,7 @@ while ($row = $stmt->fetch(PDO:: FETCH_ASSOC)){
         <td class= "table" id= "tableitem">31</td>
     <tr/>
 </table>
-</section>
+</div>
 
 <footer id= "footer"> 
 <?php include('includes/cookies.html');?>

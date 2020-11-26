@@ -23,30 +23,6 @@ body {
     
 }
 
-#header {
-    z-index: 1;
-    position: static;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: white;
-    list-style-type: none;
-    margin:0px;
-}
-
-
-
-#footer{
-    z-index: 1;
-    position:static;
-    background-color: white;
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
-    padding-left:1rem;
-
-}
-
 button{
     margin-top:1rem;
 }
@@ -113,11 +89,6 @@ nav {
 
 }
 
-img#logo{
-    width:100%;
-    height:auto;
-    justify-content: center;
-}
 
 img.articleimg{
     width:100%;
@@ -192,9 +163,9 @@ section.title {
     
 }
 
+.table {
+    width:50vw;
 
-.table#tableitem,.table#tableHeading{
-    width:50%;
 }
 
 section#articleTop{
@@ -237,6 +208,8 @@ section#articleTop{
 }
 
 #techArticle,#industryArticle,#careerArticle{
+    border: solid grey;
+    border-width: 2px;
     width:33%;
     display: flex;
     justify-content: flex-start;
@@ -266,15 +239,14 @@ a:hover{
 }
 
 section.featuredArticle {
-    position:relative;
     height: 80vh;
     display:flex;
     flex-direction:column;
     font-size: 1.25em;
     background-color: white;
     background-image:50%;
-    padding-top:30px;
-    padding-bottom:30px;
+    padding-top:2rem;
+    padding-bottom:2rem;
     margin-bottom: 3rem;
     overflow:hidden;
 }
@@ -286,10 +258,11 @@ p#featuredArticleDetail {
 }
 
 #featuredimg {
-    width: 50%;
+    width: 100%;
 }
 
 #featuredArticleHeading {
+    margin-top:0;
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -340,11 +313,14 @@ p#featuredArticleDetail {
 
 #aboutText{
     margin-left:2rem;
+    margin-bottom:1rem;
 }
 
 .IndivArticle{
     background-color:white; 
     margin-bottom: 2rem;
+    margin-left:auto;
+    margin-right:auto;
     padding:2%;
     display:flex;
     justify-content: center;
@@ -359,7 +335,7 @@ iframe {
     margin-left: 2rem;
 }
 
-@media (max-width:540px)  {
+@media (max-width:480px)  {
 /* smartphones, Android phones, landscape iPhone */ 
 
 body{
@@ -368,16 +344,11 @@ body{
     line-height: 2rem;
 }
 
-img#logo {
-    width:20%;
-    height:auto;
-}
-
 section.article {
     margin:0;
 }
 
-.IndivArticle{
+.indivArticle{
     width:95%;
     margin:0;
     margin-left:auto;
