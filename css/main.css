@@ -80,7 +80,7 @@ h3{
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: 700;
 }
 
@@ -201,6 +201,7 @@ section#articleTop{
     justify-content: space-between;
 }
 
+
 #addArticle{
     padding-right:2rem;
 }
@@ -274,7 +275,7 @@ section.featuredArticle {
     padding-top:2rem;
     padding-bottom:2rem;
     margin-bottom: 3rem;
-    overflow:hidden;
+    overflow-y:auto;
 }
 
 p#featuredArticleDetail {
@@ -284,7 +285,7 @@ p#featuredArticleDetail {
 }
 
 #featuredimg {
-    width: 100%;
+    width: 50%;
 }
 
 #featuredArticleHeading {
@@ -365,6 +366,12 @@ body{
     line-height: 2rem;
 }
 
+h4 {
+    font-size: .6em;
+    font-weight: 700;
+    margin-top: 40px;;
+}
+
 section.article {
     margin:0;
 }
@@ -401,6 +408,10 @@ section.featuredArticle {
 #articleDetails {
     margin-left:5%;
     margin-right:5%;
+}
+
+section#header {
+    height:50%;
 }
 
 }
