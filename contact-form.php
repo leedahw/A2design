@@ -45,7 +45,7 @@ include("includes/standardheader.html");
 
     </section>
 
-<script src= ".js/main.js"></script>
+<script src= "./js/main.js"></script>
 
 </body>
 </html>

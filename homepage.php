@@ -177,5 +177,6 @@ while ($row = $stmt->fetch(PDO:: FETCH_ASSOC)){
 <footer id= "footer"> 
 <?php include('includes/cookies.html');?>
 </footer>
+<script src="./js/table.js"></script>
 </body>
 </html>
