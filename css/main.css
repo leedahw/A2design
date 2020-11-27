@@ -276,6 +276,10 @@ section.featuredArticle {
     margin-bottom: 3rem;
 }
 
+#message{
+    padding-left: 2rem;
+}
+
 p#featuredArticleDetail {
     padding-left: 2rem;
     padding-right: 2rem;
